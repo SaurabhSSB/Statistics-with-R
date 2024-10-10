@@ -21,3 +21,12 @@ pie(suv_data$rel_Freq, suv_data$brand, main="Pie Chart - Top 5 SUVs in India")
 
 colours <- c("green","yellow","red","orange")
 pie(suv_data$rel_Freq_Percent,brand,main = "Pie Chart" , col=colours )
+
+## Dot Plot
+Age <- c(52,21,43,52,67,43,63,35,43,52,21,35,21,21,43,35,60,43,35)
+plot(Age)
+dotchart(Age, main = "Dot Plot of Age", xlab = "Age", xlim = c(20,70))
+
+## stem and leaf plot
+stem(Age)
+
