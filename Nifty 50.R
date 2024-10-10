@@ -13,3 +13,10 @@ stock_data <- data.frame(table(stock_groups)) # Absolute Frequency
 stock_data$relative_Freq <- stock_data$Freq/sum(stock_data$Freq)
 
 stock_data$cumulative_Freq <- cumsum(stock_data$relative_Freq)
+
+# Histogram
+hist(stock_returns, x_breaks)
+
+# Ogive (Cumulative Frequency)
+plot(sort(stock_returns), cumsum(stock_returns)/sum(stock_returns), xlab="Profit",
+     ylab="Cumulative Frequency", main = "Ogive of Stock Returns", type="l")
