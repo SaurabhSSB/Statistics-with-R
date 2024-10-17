@@ -14,10 +14,15 @@ df[,6]
 df[,6:8]
 df[3:5,1:5]
 df$gender
+
 summary(df$survived)
+
 sum(is.na(df))
+
 names(which(colSums(is.na(df)) > 0))
+
 which(is.na(df$embarked))
+
 df[169,]
 
 # install.packages("Hmisc") - First time only
