@@ -1,8 +1,13 @@
 library(readxl)
+
 df<-read_excel("C:/Users/Hp/Desktop/titanic.xlsx")
+
 head(df,10)
+
 str(df)
+
 summary(df)
+
 df[2,]
 df[1:5,]
 df[,6]
