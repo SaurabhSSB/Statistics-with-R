@@ -15,11 +15,13 @@ barplot(suv_data$sales~suv_data$brand, xlab = "brand" , ylab = "units sold",
 
 # Pareto Chart
 
+
+
+
 suv_2 <- suv_data[order(suv_data$sales, decreasing = TRUE),]
 barplot(suv_2$sales,names.arg = suv_2$brand,main = "Pareto Plot - Top 5 SUV's in India")
 
 # Pie chart
-
 pie(suv_data$rel_Freq, suv_data$brand, main="Pie Chart - Top 5 SUVs in India")
 
 colours <- c("green","yellow","red","orange")
