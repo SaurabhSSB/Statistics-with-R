@@ -21,10 +21,8 @@ barplot(suv_2$sales,names.arg = suv_2$brand,main = "Pareto Plot - Top 5 SUV's in
 # Pie chart
 
 pie(suv_data$rel_Freq, suv_data$brand, main="Pie Chart - Top 5 SUVs in India")
+
 colours <- c("green","yellow","red","orange")
-
-
-
 pie(suv_data$rel_Freq_Percent,brand,main = "Pie Chart" , col=colours )
 
 # Dot Plot
