@@ -6,6 +6,9 @@ suv_data <- data.frame(brand,sales)
 suv_data$rel_Freq <- suv_data$sales/total_sales
 suv_data$rel_Freq_Percent <- 100*(suv_data$sales/total_sales)
 suv_data$cumulative_Freq <- cumsum(suv_data$rel_Freq)
+
+
+
 suv_data$cumulative_Freq_Percent <- 100*suv_data$cumulative_Freq
 
 # Bar Chart
@@ -14,7 +17,6 @@ barplot(suv_data$sales~suv_data$brand, xlab = "brand" , ylab = "units sold",
         main = "Bar Plot - Top 5 SUVs in India")
 
 # Pareto Chart
-
 suv_2 <- suv_data[order(suv_data$sales, decreasing = TRUE),]
 barplot(suv_2$sales,names.arg = suv_2$brand,main = "Pareto Plot - Top 5 SUV's in India")
 
