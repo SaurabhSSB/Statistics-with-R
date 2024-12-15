@@ -6,8 +6,8 @@ suv_data <- data.frame(brand,sales)
 suv_data$rel_Freq <- suv_data$sales/total_sales
 suv_data$rel_Freq_Percent <- 100*(suv_data$sales/total_sales)
 suv_data$cumulative_Freq <- cumsum(suv_data$rel_Freq)
-suv_data$cumulative_Freq_Percent <- 100*suv_data$cumulative_Freq
 
+suv_data$cumulative_Freq_Percent <- 100*suv_data$cumulative_Freq
 # Bar Chart
 
 barplot(suv_data$sales~suv_data$brand, xlab = "brand" , ylab = "units sold",
