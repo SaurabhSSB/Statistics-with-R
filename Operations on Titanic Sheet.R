@@ -1,8 +1,8 @@
 library(readxl)
+
 df<-read_excel("C:/Users/Hp/Desktop/titanic.xlsx")
 
 head(df,10)
-
 
 str(df)
 
