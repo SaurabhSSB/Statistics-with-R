@@ -1,6 +1,7 @@
 library(readxl)
 
 df<-read_excel("C:/Users/Hp/Desktop/titanic.xlsx")
+
 head(df,10)
 
 str(df)
@@ -12,7 +13,6 @@ df[1:5,]
 df[,6]
 df[,6:8]
 df[3:5,1:5]
-
 df$gender
 
 summary(df$survived)
